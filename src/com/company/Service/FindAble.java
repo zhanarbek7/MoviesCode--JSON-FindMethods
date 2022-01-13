@@ -10,9 +10,9 @@ public interface FindAble {
 
     void findMoviesByDirector(List<Movies> movies);
 
-    void findMoviesByYear(List<Movies> movies, int name);
+    void findMoviesByYear(List<Movies> movie, String year);
 
     void findMoviesAndRoleByActor(List<Movies> movies);
 
-    void showActorRoles(List<Movies> movies);
+    void findMoviesByName(List<Movies> movies, String name);
 }

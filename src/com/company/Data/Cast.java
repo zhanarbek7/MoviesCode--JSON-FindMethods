@@ -1,11 +1,13 @@
 package com.company.Data;
 
+import java.util.Comparator;
+
 /**
  * Project: MoviesCode
  * Author: Zhanarbek Abdurasulov
  * Date: 10/1/22
  */
-public class Cast {
+public class Cast implements Comparator<Cast> {
     private String fullName;
     private String role;
 
@@ -31,5 +33,11 @@ public class Cast {
                 "fullName='" + fullName + '\'' +
                 ", role='" + role + '\'' +
                 '}';
+    }
+
+
+    @Override
+    public int compare(Cast o1, Cast o2) {
+        return o1.getRole().compareTo(o2.getRole());
     }
 }

@@ -2,6 +2,7 @@ package com.company.Service;
 
 import com.company.Data.Movies;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -10,14 +11,12 @@ import java.util.List;
  * Date: 10/1/22
  */
 public interface SortAble {
-
-    void printAllMovies(List<Movies> movies);
-
-    void findMovie(List<Movies> movies);
-
     void sortByYear(List<Movies> movies);
 
     void sortByName(List<Movies> movies);
 
     void sortByDirector(List<Movies> movies);
+
+    void sortAllActors(List<Movies> movies);
+
 }
